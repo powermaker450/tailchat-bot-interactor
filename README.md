@@ -24,7 +24,7 @@ channel_name=""
 Once the env.py file is properly filled out, start the bot-interactor.py script.
 It will output the instance URL you entered as well as the last four digits of the set bot key.
 ```
-❯ python bot-interator.py     
+❯ python bot-interactor.py     
 
 Tailchat Notify Bot Interactor 1.0
 Instance: https://tailchat.example.com
@@ -37,6 +37,7 @@ To exit, press enter.
 ```
 All messages sent into the program are sent through the bot into the channel specified in the guild settings.
 You can verify the settings are correct by checking if the messages succesfully sent in your set channel.
-Sending formatted text is supported. See https://tailchat.msgbyte.com/docs/advanced-usage/richtext for text formatting options.
+
+Sending formatted text is supported, see https://tailchat.msgbyte.com/docs/advanced-usage/richtext for text formatting options.
 
 Once you are done, press enter with a blank message to exit.
