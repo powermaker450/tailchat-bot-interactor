@@ -9,23 +9,13 @@ except:
 	exit()
 
 try:
-	import env
+	from env import *
 except ModuleNotFoundError:
 	print("ERROR: The env.py file appears to be missing. It needs to be in the same directory as the program.")
 	exit()
 except SyntaxError:
 	print("ERROR: The env.py file appears to be formatted incorrectly. Check and fix any errors.")
 	exit()
-except:
-	print("ERROR: Unknown error")
-	exit()
-
-#don't set the values here. edit the env.py file.
-try:
-	key=env.key
-	instance_url=env.instance_url
-	guild_name=env.guild_name
-	channel_name=env.channel_name
 except AttributeError:
 	print("ERROR: Some variables have not been created in the env.py file. Check and fix any errors.\n")
 	print("The following variables should be defined: \"key\", \"instance_url\".")
